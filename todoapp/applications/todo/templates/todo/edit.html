@@ -5,9 +5,17 @@
 
 {% block content%}
 
-<form method="post">{% csrf_token %}
-    {{ form }}
-    <button type="submit">Edit task</button>
-</form>
+<div class="container my-4 text-center">
+    <h1 class="my-3">Edit Task</h1>
+    <form method="post">{% csrf_token %}
+        <div class="mb-3">
+
+            {{ form }}
+
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Edit Task</button>
+    </form>
+</div>
 
 {% endblock %}
